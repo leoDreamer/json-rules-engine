@@ -1,18 +1,17 @@
 {
-  "name": "json-rules-engine",
-  "version": "2.3.6",
+  "name": "jsonre",
+  "version": "0.0.1",
   "description": "Rules Engine expressed in simple json",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha && npm run lint --silent",
     "lint": "standard --verbose --env mocha | snazzy || true",
     "lint:fix": "standard --fix --env mocha",
-    "prepublishOnly": "npm run build",
     "build": "babel --stage 1 -d dist/ src/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cachecontrol/json-rules-engine"
+    "url": "https://github.com/leoDreamer/json-rules-engine"
   },
   "keywords": [
     "rules",
@@ -37,12 +36,12 @@
       "factories"
     ]
   },
-  "author": "Cache Hamm <cache.hamm@gmail.com>",
+  "author": "Leo <leolichuan@qq.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cachecontrol/json-rules-engine/issues"
+    "url": "https://github.com/leoDreamer/json-rules-engine/issues"
   },
-  "homepage": "https://github.com/cachecontrol/json-rules-engine",
+  "homepage": "https://github.com/leoDreamer/json-rules-engine",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",

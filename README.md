@@ -8,6 +8,8 @@
 
 A rules engine expressed in JSON
 
+clone from(https://github.com/CacheControl/json-rules-engine)
+
 ## Synopsis
 
 ```json-rules-engine``` is a powerful, lightweight rules engine.  Rules are composed of simple json structures, making them human readable and easy to persist.
