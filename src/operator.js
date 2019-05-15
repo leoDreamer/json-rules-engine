@@ -1,6 +1,6 @@
 'use strict'
 
-export default class Operator {
+module.exports = class Operator {
   /**
    * Constructor
    * @param {string}   name - operator identifier

@@ -1,6 +1,6 @@
 {
   "name": "jsonre",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Rules Engine expressed in simple json",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,13 @@
       "factories"
     ]
   },
+  "files": [
+    "src",
+    "examplesb",
+    "docs",
+    "test",
+    "index.js"
+  ],
   "author": "Leo <leolichuan@qq.com>",
   "license": "ISC",
   "bugs": {

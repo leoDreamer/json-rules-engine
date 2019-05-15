@@ -1,18 +1,18 @@
 'use strict'
 
-import Fact from './fact'
-import { UndefinedFactError } from './errors'
-import debug from './debug'
+const Fact = require('./fact')
+const { UndefinedFactError } = require('./errors')
+const debug = require('./debug')
 
-import selectn from 'selectn'
-import isObjectLike from 'lodash.isobjectlike'
+const selectn = require('selectn')
+const isObjectLike = require('lodash.isobjectlike')
 
 /**
  * Fact results lookup
  * Triggers fact computations and saves the results
  * A new almanac is used for every engine run()
  */
-export default class Almanac {
+module.exports = class Almanac {
   constructor (factMap, runtimeFacts = {}) {
     this.factMap = new Map(factMap)
     this.factResultsCache = new Map() // { cacheKey:  Promise<factValu> }

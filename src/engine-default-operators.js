@@ -1,6 +1,6 @@
 'use strict'
 
-import Operator from './operator'
+const Operator = require('./operator')
 
 let Operators = []
 Operators.push(new Operator('equal', (a, b) => a === b))
@@ -19,4 +19,4 @@ Operators.push(new Operator('lessThanInclusive', (a, b) => a <= b, numberValidat
 Operators.push(new Operator('greaterThan', (a, b) => a > b, numberValidator))
 Operators.push(new Operator('greaterThanInclusive', (a, b) => a >= b, numberValidator))
 
-export default Operators
+module.exports = Operators

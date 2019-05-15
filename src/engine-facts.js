@@ -10,4 +10,4 @@ let SuccessEventFact = function () {
   }
 }
 
-export { SuccessEventFact }
+module.exports = { SuccessEventFact }

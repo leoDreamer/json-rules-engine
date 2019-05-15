@@ -1,9 +1,9 @@
 'use strict'
 
-import Condition from './condition'
-import RuleResult from './rule-result'
-import { EventEmitter } from 'events'
-import debug from './debug'
+const Condition = require('./condition')
+const RuleResult = require('./rule-result')
+const { EventEmitter } = require('events')
+const debug = require('./debug')
 
 class Rule extends EventEmitter {
   /**
@@ -270,4 +270,4 @@ class Rule extends EventEmitter {
   }
 }
 
-export default Rule
+module.exports = Rule

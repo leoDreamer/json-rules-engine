@@ -1,9 +1,9 @@
 'use strict'
 
-import debug from './debug'
-import isObjectLike from 'lodash.isobjectlike'
+const debug = require('./debug')
+const isObjectLike = require('lodash.isobjectlike')
 
-export default class Condition {
+module.exports = class Condition {
   constructor (properties) {
     if (!properties) throw new Error('Condition: constructor options required')
     let booleanOperator = Condition.booleanOperator(properties)

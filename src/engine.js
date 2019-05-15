@@ -1,17 +1,17 @@
 'use strict'
 
-import Fact from './fact'
-import Rule from './rule'
-import Operator from './operator'
-import Almanac from './almanac'
-import { EventEmitter } from 'events'
-import { SuccessEventFact } from './engine-facts'
-import defaultOperators from './engine-default-operators'
-import debug from './debug'
+const Fact = require('./fact')
+const Rule = require('./rule')
+const Operator = require('./operator')
+const Almanac = require('./almanac')
+const { EventEmitter } = require('events')
+const { SuccessEventFact } = require('./engine-facts')
+const defaultOperators = require('./engine-default-operators')
+const debug  = require('./debug')
 
-export const READY = 'READY'
-export const RUNNING = 'RUNNING'
-export const FINISHED = 'FINISHED'
+const READY = 'READY'
+const RUNNING = 'RUNNING'
+const FINISHED = 'FINISHED'
 
 class Engine extends EventEmitter {
   /**
@@ -231,6 +231,10 @@ class Engine extends EventEmitter {
       }).catch(reject)
     })
   }
+
+  getRuleByIndex (index) {
+    return this.rules[index]
+  }
 }
 
-export default Engine
+module.exports = Engine

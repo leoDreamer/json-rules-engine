@@ -1,6 +1,6 @@
 'use strict'
 
-import hash from 'object-hash'
+const hash = require('object-hash')
 
 class Fact {
   /**
@@ -97,4 +97,4 @@ class Fact {
 Fact.CONSTANT = 'CONSTANT'
 Fact.DYNAMIC = 'DYNAMIC'
 
-export default Fact
+module.exports = Fact

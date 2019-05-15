@@ -1,8 +1,8 @@
 'use strict'
 
-import deepClone from 'clone'
+const deepClone = require('clone')
 
-export default class RuleResult {
+module.exports = class RuleResult {
   constructor (conditions, event, priority) {
     this.conditions = deepClone(conditions)
     this.event = deepClone(event)
