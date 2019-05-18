@@ -235,6 +235,11 @@ class Engine extends EventEmitter {
   getRuleByIndex (index) {
     return this.rules[index]
   }
+
+  clearRules () {
+    this.prioritizedRules = null
+    this.rules = []
+  }
 }
 
 module.exports = Engine
