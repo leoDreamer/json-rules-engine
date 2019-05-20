@@ -232,8 +232,8 @@ class Engine extends EventEmitter {
     })
   }
 
-  getRuleByIndex (index) {
-    return this.rules[index]
+  formatRule (define) {
+    return new Fact(define)
   }
 
   clearRules () {
