@@ -233,7 +233,7 @@ class Engine extends EventEmitter {
   }
 
   formatRule (define) {
-    return new Fact(define)
+    return new Rule(define)
   }
 
   clearRules () {
