@@ -1,6 +1,6 @@
 {
   "name": "jsonre",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Rules Engine expressed in simple json",
   "main": "index.js",
   "scripts": {

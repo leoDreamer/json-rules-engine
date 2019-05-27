@@ -232,8 +232,9 @@ class Engine extends EventEmitter {
     })
   }
 
-  formatRule (define) {
-    return new Rule(define)
+  removeRuleByIndex (index) {
+    this.prioritizedRules = null
+    return Boolean(this.rules.splice(index, 1).length)
   }
 
   clearRules () {
